@@ -22,7 +22,7 @@ This project consists of three main components that work together to control and
 
 ## Project Structure
 
-### 1. vex-iq-serial-control/
+### 1. vex-iq-serial-control
 A VEX IQ2 Clawbot control system that implements serial communication for remote robot control. This component:
 - Controls drive motors, arm, and claw operations
 - Provides real-time sensor data feedback (distance, bumper state, heading)
@@ -30,14 +30,14 @@ A VEX IQ2 Clawbot control system that implements serial communication for remote
 - Uses a simple command format for remote control
 - Monitors multiple sensors including distance, bumper, and inertial sensors
 
-### 2. pythonSerial/
+### 2. pythonSerial
 A Python-based WebSocket bridge that enables bidirectional communication between serial devices (VEX IQ Robot) and a WebSocket server. This component:
 - Establishes real-time data transfer between serial ports and WebSocket connections
 - Handles error management and graceful shutdown
 - Provides thread-safe implementation for reliable communication
 - Configurable for different serial ports and baud rates
 
-### 3. RobotControlServer/
+### 3. RobotControlServer
 A FastAPI-based server application that serves as the central control system. This component:
 - Provides REST API endpoints for robot control
 - Manages WebSocket connections for real-time communication
